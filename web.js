@@ -6,9 +6,9 @@ var FILE_DEFAULT = "index.html";
 var app = express.createServer(express.logger());
 
 var message = function(file) {
-  file = file || FILE_DEFAULT;
-  var buf = fs.readFileSync(file);
-  return (buf.ToString('utf-8');
+  var file = file || FILE_DEFAULT;
+  var buffer = fs.readFileSync(file);
+  return (buffer.toString('utf-8');
 };
 
 app.get('/', function(request, response) {
